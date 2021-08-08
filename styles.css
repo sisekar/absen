@@ -23,10 +23,11 @@ body{
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-weight: 900;
+	padding: 10px;
 }
 
 .cards_wrap{
-	padding: 20px;
+	padding: 10px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -34,14 +35,14 @@ body{
 }
 
 .cards_wrap .card_item{
-	padding: 15px 25px;
+	padding: 5px 5px;
 	width: 25%;
 }
 
 .cards_wrap .card_inner{
 	background: #fff;
 	border-radius: 5px;
-	padding: 35px 20px;
+	padding: 5px 5px;
 	min-width: 225px;
 	
 	width: 100%;
