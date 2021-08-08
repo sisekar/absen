@@ -9,7 +9,7 @@
 <body>
  <div class="wrapper">
 	<div class="header">Absensi Perangakt Desa</div>
-	<form action="get">		
+	<form name="submit-to-google-sheet">		
 		<div class="cards_wrap">
 			<div class="card_item">
 				<div class="card_inner">
@@ -18,8 +18,19 @@
 				</div>
 			</div>
 		</div>
+		<button type="submit">Send</button>
 	</form>
 </div>  
-
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbw8fHn3yXbyXOO7pCECtyzGdDYRK9oIiX6e8k4YZLmv0LneX2h2fPHhi4FdIguLNdSI9g/exec'
+	const form = document.forms['submit-to-google-sheet']
+  
+	form.addEventListener('submit', e => {
+	  e.preventDefault()
+	  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+		.then(response => console.log('Success!', response))
+		.catch(error => console.error('Error!', error.message))
+	})
+  </script>
 </body>
 </html>
