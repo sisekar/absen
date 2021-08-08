@@ -42,7 +42,7 @@ body{
 .cards_wrap .card_inner{
 	background: #fff;
 	border-radius: 5px;
-	padding: 5px 5px;
+	padding: 5px 51px;
 	min-width: 225px;
 	
 	width: 100%;
@@ -91,6 +91,14 @@ body{
 		font-size: 16px;
 	}
 }
+.tombol-absen {
+
+	position: fixed;
+	margin-bottom: 20px;
+	margin-left: auto;
+	background-color: blue;
+	padding: 6px;
+	border-radius: 2px;
 
 @media screen and (max-width: 568px){
 	.cards_wrap .card_item{
