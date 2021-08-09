@@ -91,14 +91,19 @@ body{
 		font-size: 16px;
 	}
 }
-.tombol {
-
-	position: fixed;
-	margin-bottom: 10px;
-	background-color: blue;
-	padding: 6px;
-	border-radius: 2px;
-}
+.floatwa {
+	position:fixed;
+	bottom:0px;
+	right: 0px;
+	background-color:#ffffff;
+	width:100%;
+	z-index:1000;
+	padding:2px;
+	margin:auto;
+	text-align:center;
+	float:none;
+	box-shadow: 0px -2px 10px #c0c0c0;
+	}
 @media screen and (max-width: 568px){
 	.cards_wrap .card_item{
 		width: 100%;
