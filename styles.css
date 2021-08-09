@@ -9,11 +9,13 @@
 body{
 	background: #eeeff4;
 }
-
+.header {
+	position:fixed;
+}
 .wrapper .header{
 	width: 100%;
 	
-	background: #e36686;
+	background: #bdbdbd;
 	color: #fff;
 	text-align: center;
 	display: flex;
@@ -41,7 +43,10 @@ body{
 
 .cards_wrap .card_inner{
 	background: #fff;
-	border-radius: 5px;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 5px;
 	padding: 5px 51px;
 	min-width: 225px;
 	
@@ -53,8 +58,8 @@ body{
 	margin-bottom: 5px;
 }
 
-.cards_wrap .card_item .role_name{
-	color: #e36686;
+.cards_wrap .card_inner .role_name{
+	color: #a166ff;
 	font-weight: 900;
 	letter-spacing: 2px;
 	text-transform: uppercase;
