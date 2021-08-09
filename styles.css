@@ -91,11 +91,10 @@ body{
 		font-size: 16px;
 	}
 }
-.tombol-absen {
+.tombol {
 
 	position: fixed;
-	margin-bottom: 20px;
-	margin-left: auto;
+	margin-bottom: 10px;
 	background-color: blue;
 	padding: 6px;
 	border-radius: 2px;
