@@ -43,9 +43,9 @@ body{
 
 .cards_wrap .card_inner{
 	background: #fff;
-	border-top-left-radius: 50%;
+	border-top-left-radius: 12px;
 	border-top-right-radius: 5px;
-	border-bottom-left-radius: 50%;
+	border-bottom-left-radius: 12px;
 	border-bottom-right-radius: 5px;
 	padding: 5px 51px;
 	min-width: 225px;
@@ -95,7 +95,7 @@ body{
 	.wrapper .header{
 		font-size: 16px;
 	}
-}
+} 
 .floatwa {
 	position:fixed;
 	bottom:0px;
@@ -112,6 +112,8 @@ body{
 .floatwa button { 
 	padding: 10px;
 	margin: 10px;
+	background-color: blue;
+	border-radius: 8px;
 }
 @media screen and (max-width: 568px){
 	.cards_wrap .card_item{
