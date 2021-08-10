@@ -9,7 +9,7 @@
 body{
 	background: #eeeff4;
 }
-input {
+input [type=radio] {
 	font-size: 50px;
 }
 .header {
