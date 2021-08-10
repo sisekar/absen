@@ -9,6 +9,9 @@
 body{
 	background: #eeeff4;
 }
+input {
+	font-size: 50px;
+}
 .header {
 	position:fixed;
 	width: 100%;
