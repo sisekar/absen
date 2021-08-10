@@ -9,8 +9,11 @@
 body{
 	background: #eeeff4;
 }
-input [type=radio] {
-	font-size: 50px;
+input[type=radio] {
+    background: none;
+    color: cyan;
+    padding: 10px;
+    border: 1px solid cyan;
 }
 .header {
 	position:fixed;
