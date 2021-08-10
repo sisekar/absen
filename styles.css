@@ -129,7 +129,7 @@ body{
 input[type="radio"] {
 	display: none;
 }
-input[type="radio"] + label:before {
+input[type="radio"] + label:before + img:before{
 	background-color: white;
 	border: 5px solid lightblue;
 	content: "";
@@ -143,7 +143,7 @@ input[type="radio"] + label:before {
 	vertical-align: middle;
 	text-align: center;
 }
-input[type="radio"]:checked + label:before {
+input[type="radio"]:checked + label:before + img:before {
 background-color: lightblue;
 border: 5px solid pink;
 content: "";
