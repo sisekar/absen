@@ -144,8 +144,8 @@ input[type="radio"] + label:before {
 	text-align: center;
 }
 input[type="radio"]:checked + label:before {
-background-color: pink;
-border: 5px solid white;
+background-color: lightblue;
+border: 5px solid pink;
 content: "";
 display: inline-block;
 font-size: 35px;
