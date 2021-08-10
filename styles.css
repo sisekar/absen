@@ -125,3 +125,25 @@ body{
 	border-color: turquoise;
 	box-shadow: 0 0 1px;
 }
+
+input[type="radio"] {
+	display: none;
+}
+input[type="radio"] + label:before {
+	background-color: white;
+	border: 5px solid lightblue;
+	content: "";
+	display: inline-block;
+	font-size: 35px;
+	height: 15px;
+	width: 15px;
+	border-radius: 15px;
+	line-height: 15px;
+	margin: 5px 10px 0 1px;
+	vertical-align: middle;
+	text-align: center;
+}
+input[type="radio"]:checked + label:before {
+	content: "\2022";
+	color: pink;
+}
