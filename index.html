@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="alert alert-success  alert-dismissible fade show d-none" role="alert">
+		<div class="alert my-alert alert-success  alert-dismissible fade show d-none" role="alert">
 			<strong>Holy guacamole!</strong> You should check in on some of those fields below.
 			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 		  </div>
@@ -109,7 +109,7 @@
 	const form = document.forms['submit-to-google-sheet'];
 	const btnKirim =document.querySelector('.btn-kirim');
 	const btnLoading =document.querySelector('.btn-loading');
-	const alert =document.querySelector('.alert')
+	const myAlert =document.querySelector('.my-alert')
   
 	form.addEventListener('submit', e => {
 	  e.preventDefault()
@@ -119,10 +119,13 @@
 		.then(response => {
 			btnLoading.classList.toggle('d-none');
 	  		btnKirim.classList.toggle('d-none');
+			myAlert.classList.toggle('d-none');
+			form.reset();
 			console.log('Success!', response);
 		})
 		.catch(error => console.error('Error!', error.message))
 	})
+
   </script>
 </body>
 </html>
