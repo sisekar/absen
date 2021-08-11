@@ -9,12 +9,6 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="alert alert-danger my-alert d-flex align-items-center" role="alert">
-			<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:"><use xlink:href="#exclamation-triangle-fill"/></svg>
-			<div>
-			  absen gagal
-			</div>
-		</div>
 	<form name="submit-to-google-sheet">		
 		<div class="cards_wrap">
 			<div class="card_item">
@@ -126,7 +120,6 @@
 			console.log('Success!', response);
 		})
 		.catch(error => { 
-			myAlert.classList.toggle('d-none');
 			console.error('Error!', error.message)
 	})
 	})
