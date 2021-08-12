@@ -126,22 +126,22 @@ input[type="radio"] {
 
 }
 
-input[type="radio"] + label:before {
+input[type="radio"] + label::after {
 	background-color: white;
-	border: 5px solid lightblue;
+	border: 3px solid lightblue;
 	content: "";
 	display: inline-block;
-	font-size: 35px;
+	font-size: 30px;
 	height: 30px;
 	width: 100%;
-	border-radius: 12px;
+	border-radius: 10px;
 	line-height: 15px;
 	margin: 5px auto;
 	vertical-align: middle;
 	align-self: center;
 	text-align: center;
 }
-input[type="radio"]:checked + label:before  {
+input[type="radio"]:checked + label::after  {
 	background-color: lightblue;
 	border: 5px solid pink;
 }
